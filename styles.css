@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+  font-family: Nunito, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.pageApp {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+/* HEADER */
+.pageHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.optionsHeader {
+  display: flex;
+}
+
+.optionsHeader li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.optionsHeader li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.optionsHeader li a:hover {
+  opacity: 0.5;
+}
+
+/* GENERATOR */
+.pageGenerator {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textGenerator {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.cardText {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.cardText h2 {
+  font-size: 2.3rem;
+}
+
+.cardText p {
+  color: rgb(75, 75, 75);
+}
+
+.containerGenerator {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.secInput input,
+.secInput textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: Nunito;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: rgb(41, 41, 41);
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+  background-color: #dcf8c6;
+  font-weight: 200;
+}
+
+.btnGen {
+  width: 100%;
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.btnTest {
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+
+.btnGen:hover {
+  background-color: rgb(0, 0, 136);
+  opacity: 0.7;
+}
+
+.btnTest:hover {
+  background: none;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+.message1 {
+  background-color: #c4fecb;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.418);
+  margin-top: 10px;
+  transform: translateX(30px) rotate(-2deg);
+}
+
+.message2 {
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.418);
+  transform: translateX(-30px) rotate(3deg);
+  margin-top: 50px;
+}
+
+.cardGenerator {
+  width: 80%;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 3px 3px 10px 0.5px rgba(0, 0, 0, 0.322);
+  padding: 10px;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.iconCopy {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.iconCopy:hover {
+  opacity: 0.6;
+}
+
+.textLink {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pageApp {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pageApp {
+    height: 200vh;
+    flex-direction: column;
+  }
+
+  .pageGenerator {
+    flex-direction: column;
+  }
+
+  .pageHeader {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 10vh;
+    font-size: 4vw;
+    z-index: 100000;
+  }
+
+  .pageHeader h1 {
+    font-size: 5vw;
+  }
+
+  .textGenerator {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cardText {
+    width: 70%;
+    font-size: 2vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardText h2 {
+    font-size: 8vw;
+  }
+
+  .cardText p {
+    font-size: 5vw;
+  }
+
+  .message1,
+  .message2 {
+    font-size: 4vw;
+  }
+
+  .cardGenerator {
+    width: 80%;
+  }
+
+  .secInput {
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  .containerGenerator {
+    width: 100%;
+  }
+}
